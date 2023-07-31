@@ -1,0 +1,37 @@
+body {
+	background: yellow;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	font-family: monospace;
+}
+
+.title {
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.link {
+	text-align: center;
+	width: 350px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #00FF00;
+	text-decoration: none;
+	font-size: 30px;
+	color: #D2691E;
+	font-weight: 400;
+}
+
+.link:hover {
+	background-color: #ADFF2F;
+	border: 2px solid #00FF00;
+	transform: scale(1.2);
+}
