@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style-css.css">
+	<title>Code Style CSS</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container__logo">
+			<img class="logo" src="/img/logo.png" alt="logo">
+		</div>
+	</header>
+	<main class="main">
+		<section class="menu">
+			<div class="container">
+				<h1>Code Style CSS</h1>
+				
+					<ul class="menu__list">
+						<li class="menu__link">
+							<img src="img/logo-link.png" alt="logo">
+							<a href="HTMLStyle.html" class="navigation__link">Code Style HTML</a>
+						</li>
+						<li class="menu__link">
+							<img src="img/logo-link.png" alt="logo">
+							<a href="CSSStyle.html" class="navigation__link">Code Style CSS</a>
+						</li>
+						<li class="menu__link">
+							<img src="img/logo-link.png" alt="logo">
+							<a href="#" class="navigation__link">Code Style Javascript для верстальщика</a>
+						</li>
+					</ul>
+				
+			</div>
+		</section>
+		<section class="block__good-cod">
+			<div class="container">
+				<p class="text">Хороший код — это код который удобно читать и поддерживать.</p>
+				<p class="text">Хороший код должен быть простым:</p>
+				<ul class="list">
+					<li class="item"> используйте легко читаемые селекторы и говорящие классы. По ним сразу можно понять к чему применяются стили.</li>
+					<li class="item">классы пишите в нижнем регистре (строчными буквами).</li>
+					<li class="item">вместо пробела в классах используйте знак «дефис». Старайтесь не использовать нижнее подчеркивание и camelCase.</li>
+					<li class="item">код должен быть в одном стиле: везде используется один порядок свойств, одинаковые отступы и пробелы, один стиль записи цветов и псевдоэлементов.</li>
+				</ul>
+				<div class="block__image">
+					<figure>
+						<figcaption>плохо</figcaption>
+						<img class="img img__good" src="img/css1.png" alt="Плохой код">
+					</figure>
+					<figure>
+						<figcaption>хорошо</figcaption>
+						<img class="img img__bad" src="img/css2.png" alt="Хороший код">
+					</figure>
+				</div>
+			</div>
+		</section>
+	<section class="block__decor">
+		<div class="container">
+			<p class="text">Оформляем блок со свойствами:</p>
+				<ul class="list">
+					<li class="item">после селектора, перед открывающей блок «фигурной скобкой» ставьте «пробел».</li>
+					<li class="item">в начале строки перед свойствами ставится «два пробела». Это самый популярный вариант.</li>
+					<li class="item">после двоеточия ставьте «пробел».</li>
+					<li class="item">обязательно ставить «точку с запятой» в конце свойства.</li>
+					<li class="item">ставьте закрывающую «фигурную скобку» на новой строке.</li>
+				</ul>
+		</div>
+	</section>
+	<section class="block__rules">
+		<div class="container">
+			<div class="rules__wrapper">
+				<figure>
+					<figcaption>Между набором правил оставляйте одну пустую строку:</figcaption>
+					<img class="img img__rules" src="img/css3.png" alt="css-rules">
+				</figure>
+				<p class="text">Все стили пишем через селектор класса. Теги используем только для глобальных стилей, id в стилях не используем.
+				</p>
+				<p class="text">Избегайте использование !important.</p>
+				<p class="text">Псевдокласс nth-child используем только со значениями even и odd. В остальных случая используем дополнительный класс.</p>
+				<p class="text">Сохраняйте уровень вложенности не более двух элементов, если не используем БЭМ.</p>
+				<p class="text">Плохо: .block .faq .title</p>
+				<p class="text">Хорошо: .faq .title</p>
+				<p class="text">При использовании БЭМ вложенность не используется.</p>
+				<p class="text">Обязательно указывайте альтернативный вид и тип семейства шрифтов.</p>
+				<p class="text">Проверяйте вёрстку на переполнение.</p>
+				<p class="text">У интерактивных элементов обязательны стили состояний: hover, focus, active, disabled.</p>
+				<p class="text">Если используете свойство display: inline-block, обязательно добавляйте свойство vertical-align.</p>
+				<p class="text">Свойство position используем в крайнем случае. Исключение: если иначе сделать невозможно или сложно.</p>
+				<p class="text">У нулевых значений не нужно писать единицы измерения. Когда значение 0, то не важно это px, % или попугайчики.</p>
+				<p class="text">Значения цвета hex пишем в нижнем регистре.</p>
+				<p class="text">Проверяйте css в валидаторе <a href="https://validator.w3.org/" class="link">https://validator.w3.org/</a></p>
+				
+			</div>
+			<h3 class="title">Дополнительно</h3>
+				<p class="text">В названиях файлов и папок используйте только латиницу и буквы в нижнем регистре, без пробелов. Для разделения слов используйте «дефис» или нижние подчёркивание.</p>
+		</div>
+	</section>
+	</main>
+
+</body>
+</html>
